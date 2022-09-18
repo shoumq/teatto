@@ -65,6 +65,17 @@
                 <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="card-header">{{ __('Dashboard') }}</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
+                {{ __('You are logged in!') }}
+            </div>
             <form method="post">
                 <div class="modal-body">
                     <div class="mb-3">

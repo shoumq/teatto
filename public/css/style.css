@@ -9,6 +9,11 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header * {
+    align-items: center;
 }
 
 .white_header {
@@ -294,6 +299,47 @@ footer .infof {
     border: 2px solid #b7b7b7;
     border-top: none;
     border-radius: 0 0 5px 5px;
+}
+
+.count_pr button {
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid gray;
+    outline: none;
+    box-shadow: 0 0 3px #b7b7b7;
+    padding: 0 7px;
+    transition: .2s;
+}
+
+.count_pr button:hover {
+    background: #eeeeee;
+}
+
+.count_pr input {
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid gray;
+    outline: none;
+    width: 10%;
+    text-align: center;
+    padding: 0 7px;
+}
+
+.admin .admin_pr label input {
+    width: 100%;
+}
+
+.admin .admin_pr label {
+    width: 100%;
+}
+
+.admin .admin_pr label textarea {
+    width: 100%;
+    border: 1px solid #009822;
+    box-shadow: 2px 2px 8px rgba(157, 157, 157, 0.25);
+    border-radius: 5px;
+    outline: none;
+    padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

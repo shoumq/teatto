@@ -62,7 +62,7 @@
                                     </button>
                                 </div>
                                 <img src="https://miro.medium.com/max/2400/2*Rrb0s3_J2rOpz0hcBnCjrA.jpeg" alt="">
-                                <p class="id">id: {{ $product->id }}</p>
+                                <p class="id">Артикул: {{ $product->id }}</p>
                                 <p class="name">{{ $product->title }}</p>
                                 <div class="d-flex">
                                     <del>{{ $product->old_price }} ₽</del>
@@ -84,16 +84,17 @@
                             <h5 class="modal-title" id="exampleModalLabel">Получить прайс лист</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form method="post">
+                        <form method="post" action="{{ route('PLSubmit') }}">
+                            @csrf
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
                                            placeholder="name@example.com">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Телефон</label>
-                                    <input type="phone" class="form-control" id="exampleFormControlInput1"
+                                    <input name="phone" type="phone" class="form-control" id="exampleFormControlInput1"
                                            placeholder="+7 (999) 999-99-99">
                                 </div>
                             </div>

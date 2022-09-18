@@ -18,7 +18,7 @@
                                 </button>
                             </div>
                             <img src="https://miro.medium.com/max/2400/2*Rrb0s3_J2rOpz0hcBnCjrA.jpeg" alt="">
-                            <p class="id">id: {{ $product->id }}</p>
+                            <p class="id">Артикул: {{ $product->id }}</p>
                             <p class="name">{{ $product->title }}</p>
                             <div class="d-flex">
                                 <del>{{ $product->old_price }} ₽</del>

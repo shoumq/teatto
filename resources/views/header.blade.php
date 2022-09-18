@@ -1,7 +1,7 @@
 <div class="container">
-    <header class="mt-4 header">
+    <header class="header py-3">
         <a href="/" class="logo">TEATTO</a>
-        <div class="input_box mt-3">
+        <div class="input_box">
             <input type="text" placeholder="Поиск..." style="border-radius: 8px;">
             <button class="btn-gr px-3" type="button" style="border-radius: 8px;">Найти</button>
         </div>
@@ -13,10 +13,10 @@
             <i class="bi bi-heart mt-2"></i>
             <p>Избранное (0)</p>
         </div>
-        <a data-bs-toggle="modal" data-bs-target="#regModal" href="/" class="green_link px-3 py-2 mt-2">Войти</a>
+        <a data-bs-toggle="modal" data-bs-target="#regModal" href="/" class="green_link px-3 py-2">Войти</a>
     </header>
 </div>
-<nav class="mt-3">
+<nav>
     <div class="container">
         <div id="links">
             <a href="/categories" class="link">Категории</a>
